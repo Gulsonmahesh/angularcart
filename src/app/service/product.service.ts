@@ -12,4 +12,8 @@ export class ProductService {
   getProducts(): Observable<any> {
     return this.http.get('/products').pipe();
   }
+
+  checkout(cartItems:any): Observable<any> {
+    return this.http.post('/checkout', JSON.stringify(cartItems)).pipe();
+  }
 }

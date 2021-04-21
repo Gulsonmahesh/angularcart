@@ -11,7 +11,7 @@ export class SharedService {
 
   constructor() { }
 
-  insertProduct(data: any) {
+  insertProduct(data: any) {    
     this.myData.next(data);
   }
 

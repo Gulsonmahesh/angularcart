@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -13,6 +13,7 @@ import { CartComponent } from './shopping/cart/cart.component';
 import { PagenotfoundComponent } from './layout/pagenotfound/pagenotfound.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { NumberonlyDirective } from './directive/numberonly.directive';
+import { CheckoutComponent } from './shopping/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,15 @@ import { NumberonlyDirective } from './directive/numberonly.directive';
     CartComponent,
     PagenotfoundComponent,
     HeaderComponent,
-    NumberonlyDirective
+    NumberonlyDirective,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

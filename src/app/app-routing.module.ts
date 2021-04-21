@@ -8,11 +8,14 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
 
 import { PagenotfoundComponent } from './layout/pagenotfound/pagenotfound.component';
+import { CheckoutComponent } from './shopping/checkout/checkout.component';
+
 
 const routes: Routes = [
   {path: '', component: UserLoginComponent},
   {path: 'newuser', component: CreateUserComponent},
   {path:'productlist', component: ProductListComponent },
+  {path:'checkout', component: CheckoutComponent },
   {path:'productdetail/:id', component: ProductDetailsComponent },
   {path:'**',component: PagenotfoundComponent}
 ];
