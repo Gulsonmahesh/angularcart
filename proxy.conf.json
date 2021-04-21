@@ -1,0 +1,12 @@
+{
+  "/signup/*" : {
+    "target" : "http://52.175.23.235:3000/test/",
+    "secure" : false,
+    "changeOrigin": true
+  },
+  "/products/*" : {
+    "target" : "http://52.175.23.235:3000/test/",
+    "secure" : false,
+    "changeOrigin": true
+  }
+}
